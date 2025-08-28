@@ -1,18 +1,17 @@
-## Getting Started
+prueba 1 - variables en actividad 1 :
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Product producto1 = new Product("Mouse Inalámbrico", 25.99, 50);
+        Product producto2 = new Product("Teclado", 45.00, 30);
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+        producto1.showProduct();
+        producto1.sell(10);
+        producto1.restock(20);
+        producto1.sell(100);
+        producto1.showProduct();
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+        producto2.showProduct();
+        producto2.sell(5);
+        producto2.restock(10);
+        producto2.showProduct();
+    }
